@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN - NIKE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="icon" type="image/jpg" href="build/img/favicon.png"/>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header__top container">
+                <p class="header__text">NIKE - <span>PARADISE</span></p>
+            <div class="header__login">
+                <a href="login.html"><img class="header__icon" src="build/img/login.svg" alt="login"></a>
+                <p class="header__text">LOGIN</p>
+            </div>
+        </div>
+        <div class="header__space container"></div>
+        <div class="header__nav container">
+            <div class="navigation">
+                <div class="navigation__top">
+                        <a href="index.html"><img class="navigation__logo" src="build/img/logo.svg" alt="logo"></a>
+                    <div class="navigation__mobile">
+                        <a href="#"><img class="navigation__burger" src="build/img/burguer.svg" alt="menu"></a>
+                    </div>
+                </div>
+                <div class="navigation__links">
+                    <a class="navigation__link" href="index.html">HOME</a>
+                    <a class="navigation__link" href="store.html">STORE</a>
+                    <a id="btnNewRelease" class="navigation__link" href="#">NEW RELEASE</a>
+                    <img class="navigation__arrow" src="build/img/arrow.svg" alt="arrow">
+                </div>
+                <div class="navigation__icons">
+                    <ul>
+                        <li class="submenu">
+                                <div class="submenu__cartCount">
+                                <img class="submenu__carrito" src="build/img/store.svg" id="img-carrito">
+                                <p class="submenu__countProduct">0</p>
+                                </div>
+                                <div id="cart">
+                                        <table id="cart__container">
+                                            <thead>
+                                                <tr>
+                                                    <th>Shoes</th>
+                                                    <th>Ref</th>
+                                                    <th>Price</th>
+                                                    <th>Amount</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                        <p>Total:$<span class="cart__total">0</span></p>
+                                    <a href="#" id="cart__buy" class="navigation__buyContainer">buy all</a>
+                                    <a href="#" id="cart__clear" class="navigation__clearContainer">Clear Cart</a>
+                                    <div class="cart__msg"></div>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="new" class="newrelease hideRelease">
+        <div class="newrelease__flex">
+
+            <div class="newrelease__content">
+                <div class="newrelease__info">
+                    <img class="newrelease__img" src="build/img/newrelease1.webp" alt="newrelease">
+                    <div class="newrelease__description">
+                        <h3 class="newrelease__heading">HUARACHE RUN</h3>
+                        <p class="newrelease__text">Built to fit your foot and designed for comfort, the Nike Air Huarache brings back a street-level favorite. Soft leather accents on the upper mix with super-breathable, perfectly shined neoprene-like fabric for easy styling. The low-cut collar and bootie-like construction keep it sleek. Its iconic heel clip and stripped away branding keep the early '90s look you love.</p>
+                        <div class="newrelease__separation">
+
+                        </div>
+                        <p class="newrelease__coming">COMING SOON</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newrelease__content">
+                <div class="newrelease__info">
+                        <img src="build/img/newrelease2.webp" alt="newrelease">
+                    <div class="newrelease__description">
+                        <h3 class="newrelease__heading">Coriander</h3>
+                        <p class="newrelease__text">The Coriande takes everything you love about the Coriande X and makes it lighter and more supportive. </p>
+                        <div class="newrelease__separation">
+
+                        </div>
+                        <p class="newrelease__coming">COMING SOON</p>
+                    </div>
+                </div>
+
+                <div class="newrelease__info">
+                        <img src="build/img/newrelease3.webp" alt="newrelease">
+                    <div class="newrelease__description">
+                        <h3 class="newrelease__heading">Nike Air Max 270</h3>
+                        <p class="newrelease__text">Enjoy the sleek design of the Nike Air Max 270 in bright, warm hues. An extra-large Max Air unit provides ultra-plush cushioning under every step and a dramatic style statement, while the stretchy inner sleeve provides a snug, socklike fit that's sure to keep you comfortable all day, every day.</p>
+                        <div class="newrelease__separation">
+
+                        </div>
+                        <p class="newrelease__coming">COMING SOON</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <main class="login">
+            <div class="login__forms">
+                <div class="login__container container">
+                        
+                        <h2 class="login__heading">Sign in with your account</h2>
+                    <form id="formLogin" class="login__form">
+                            <label class="login__label">email</label>
+                            <input id="email" class="login__input" type="text">
+                            <label class="login__label">password</label>
+                            <input id="password" class="login__input" type="password">
+                            <input class="login__submit" type="submit" value="LOGIN">
+                    </form>
+                    <a href="newaccount.html" class="login__link">create an account</a>
+                </div>
+            </div>
+    </main>
+    <div class="modal">
+        <p class="modal__text">PRODUCT ADD!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="modal__icon" viewBox="0 0 20 20" fill="white">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+    </div>
+    
+    <section class="product container login__product">
+        <h2 class="home__subheading">highlights</h2>
+        <div class="product__grid">
+            <div data-aos="fade-up" class="card">
+                <img class="card__img" src="build/img/n16.webp" alt="product">
+                <div class="card__des">
+                    <p class="card__name">Nike SB Zoom Blazer Mid Premium</p>
+                    <p class="card__price">550</p>
+                </div>
+                <div class="card__space"></div>
+                <div class="card__des">
+                    <p class="card__category">SKATE</p>
+                    <div class="card__score">
+                        <img class="card__stars" src="build/img/stars.svg" alt="star">
+                        <p class="card__num">(15)</p>
+                    </div>
+                </div>
+                <div class="card__btn">
+                        <a class="card__addcart" data-id="1"  href="#">ADD CART</a>
+                </div>
+            </div><!--PRODUCT-->
+
+            <div data-aos="fade-up" class="card">
+                <img class="card__img" src="build/img/n3.webp" alt="product">
+                <div class="card__des">
+                    <p class="card__name">Air Jordan XXXVI "First Light"</p>
+                    <p class="card__price">450</p>
+                </div>
+                <div class="card__space"></div>
+                <div class="card__des">
+                    <p class="card__category">BASKET</p>
+                    <div class="card__score">
+                        <img class="card__stars" src="build/img/stars.svg" alt="star">
+                        <p class="card__num">(12)</p>
+                    </div>
+                </div>
+                <div class="card__btn">
+                        <a class="card__addcart" data-id="4"  href="#">ADD CART</a>
+                </div>
+            </div><!--PRODUCT-->
+
+            <div data-aos="fade-up" class="card">
+                <img class="card__img" src="build/img/n6.webp" alt="product">
+                <div class="card__des">
+                    <p class="card__name">Nike SB Zoom Blazer Mid</p>
+                    <p class="card__price">600</p>
+                </div>
+                <div class="card__space"></div>
+                <div class="card__des">
+                    <p class="card__category">SKATE</p>
+                    <div class="card__score">
+                        <img class="card__stars" src="build/img/stars.svg" alt="star">
+                        <p class="card__num">(13)</p>
+                    </div>
+                </div>
+                <div class="card__btn">
+                        <a class="card__addcart" data-id="7" href="#">ADD CART</a>
+                </div>
+            </div><!--PRODUCT-->
+
+            <div data-aos="fade-up" class="card">
+                <img class="card__img" src="build/img/n13.webp" alt="product">
+                <div class="card__des">
+                    <p class="card__name">Air Jordan 1 Low SE</p>
+                    <p class="card__price">350</p>
+                </div>
+                <div class="card__space"></div>
+                <div class="card__des">
+                    <p class="card__category">urban</p>
+                    <div class="card__score">
+                        <img class="card__stars" src="build/img/stars.svg" alt="star">
+                        <p class="card__num">(22)</p>
+                    </div>
+                </div>
+                <div class="card__btn">
+                        <a class="card__addcart" data-id="14"  href="#">ADD CART</a>
+                </div>
+            </div><!--PRODUCT-->
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <div class="footer__headings">
+                        <h3 class="footer__heading">store</h3>
+                        <h3 class="footer__heading">get help</h3>
+                        <h3 class="footer__heading">news</h3>
+                    </div>
+                    <div class="footer__links">
+                        <div class="footer__links--content">
+                            <a class="footer__link" href="#">highlist</a>
+                            <a class="footer__link" href="#">NEW</a>
+                            <a class="footer__link" href="#">BEST PRICE</a>
+                        </div>
+                        <div class="footer__links--content">
+                            <a class="footer__link" href="#">ORDER STATUS</a>
+                            <a class="footer__link" href="#">returns</a>
+                            <a class="footer__link" href="#">contact us</a>
+                        </div>
+                        <div class="footer__links--content">
+                            <a class="footer__link" href="#">coming soon</a>
+                            <a class="footer__link" href="#">blog</a>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <img class="footer__logo" src="build/img/logo.svg" alt="nike logo">
+                        <div class="footer__icons">
+                            <p class="footer__copy"><span>DESIGN BY - </span>JUANDEVSIGNER 2022</p>
+                            <a target="blank" href="https://www.behance.net/juanergess"><img class="footer__icon" src="build/img/behance.svg" alt="behance"></a>
+                            <a target="blank" href="https://www.linkedin.com/in/juandevsigner/"><img class="footer__icon" src="build/img/Icon-linkedin.svg" alt="linkedin"></a>
+                            <a target="blank" href="https://github.com/juandevsigner"><img class="footer__icon" src="build/img/Icon-github.svg" alt="github"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__img">
+                    <img class="footer__img--nike" src="build/img/nfooter.webp" alt="nike shoes">
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div class="mobile">
+        <div class="mobile__grid">
+            <a class="mobile__link" href="index.html">HOME</a>
+            <div class="mobile__separador"></div>
+            <a class="mobile__link" href="store.html">STORE</a>
+            <div class="mobile__separador"></div>
+        </div>
+    </div>
+
+        <a href="https://walink.co/50d972" target="blank"><img class="btn__chat" src="build/img/chat.svg" alt="arrow"></a>
+        <script src="js/burger.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/newrelease.js"></script>
+        
+</body>
+</html>

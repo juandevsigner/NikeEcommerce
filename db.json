@@ -1,0 +1,54 @@
+{
+  "user": [
+    {
+      "email": "Andres21@gmail.com",
+      "password": "andres",
+      "id": 1
+    },
+    {
+      "email": "carlos24@hotmail.com",
+      "password": "carlos123456",
+      "id": 2
+    },
+    {
+      "email": "mariangel150@gmail.com",
+      "password": "mariangel15203",
+      "id": 3
+    },
+    {
+      "email": "matiascuarto@hotmail.com",
+      "password": "blacksabbar",
+      "id": 4
+    },
+    {
+      "email": "natha155@hotmail.com",
+      "password": "1321654asdasd",
+      "id": 5
+    },
+    {
+      "email": "holamundo@qhay.com",
+      "password": "asd123456",
+      "id": 6
+    },
+    {
+      "email": "hola@coder.com",
+      "password": "codeon",
+      "id": 7
+    },
+    {
+      "email": "juan@juan.com",
+      "password": "kajshdkjashd",
+      "id": 8
+    },
+    {
+      "email": "juanda@juanda.com",
+      "password": "juanda",
+      "id": 9
+    },
+    {
+      "email": "a",
+      "password": "a",
+      "id": 10
+    }
+  ]
+}
