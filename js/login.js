@@ -14,7 +14,7 @@ async function checkUser(e){
         return showAlert('All fields are required');
     }
 
-   /*  const usersNow = await getUsers();
+   const usersNow = await getUsers();
     const userFind = usersNow.find(user => {
         return user.email === email;
     });
@@ -25,7 +25,7 @@ async function checkUser(e){
 
     if(userFind.password !== password){
         return showAlert ('password incorrect')   
-    } */
+    }
     window.location.href = 'index.html'
     
     
