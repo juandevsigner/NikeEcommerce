@@ -14,9 +14,9 @@ function checkUser(e){
     if(check(user)) {
         showAlert('All fields are required')
         return;
-    }/* else{
+    }else{
         newUser(user);
-    } */
+    }
 
     window.location.href = 'index.html';
 }
